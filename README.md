@@ -8,6 +8,3 @@
 
 ## Java
 [The Java File Link](https://github.com/amkhaliq/tipcalculator/blob/master/Tip%20Calculator/app/src/main/java/com/example/tipcalculator/MainActivity.java)
-
-## Screenshots of the app
-![Screenshot#1](screenshots/Screenshot#1.png)
