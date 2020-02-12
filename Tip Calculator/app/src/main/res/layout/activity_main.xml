@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFA"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textEdit"
+        android:layout_width="375dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:background="#87CEFA "
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="@string/amount_text"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="8"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <TextView
+        android:id="@+id/textViewBillAmount"
+        android:layout_width="375dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical|end"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/textViewBillAmount"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/seekPercent"
+        android:layout_width="61dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/seekPercent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="304dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="35dp"
+        android:fadeScrollbars="true"
+        android:max="50"
+        android:progress="15"
+        android:scrollbarSize="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toEndOf="@+id/seekPercent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBillAmount" />
+
+    <TextView
+        android:id="@+id/tipLabel"
+        android:layout_width="54dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/tipLabel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/totalTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekPercent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="309dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="#EE9090"
+        android:gravity="center|center_vertical"
+        android:text="@string/tipTextView"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/tipLabel"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="56dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/totalLabel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/totalTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/totalTextView" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="#4CAF50"
+        android:gravity="center|center_vertical"
+        android:text="@string/totalTextView"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tipTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
